@@ -6,10 +6,10 @@ terraform {
     }
   }
 backend "s3" {
-  bucket = "lingadevops-remote-state"
-  key = "vpc-module-test"
-  region = "us-east-1"
-  dynamodb_table = "lingaiah-locking"
+  bucket ="aws-vpc-test-remote-state"
+  key="aws-vpc-key"
+  region="us-east-1"
+  dynamodb_table="aws-vpc-test-locking"
   }
 }
 
